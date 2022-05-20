@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "pomodoro-app",
-    "slug": "pomodoro-app",
+    "name": "to-do-app",
+    "slug": "to-do-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
