@@ -2,19 +2,37 @@ import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
     taskItemContainer: {
-        justifyContent: "center",
-        paddingHorizontal: 20,        
         width: "100%",
+        flexDirection: 'row'
+    },
+    taskItemContentContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: "space-between",
+        paddingHorizontal: 10,
+        width: "90%",
         height: 50,
         borderWidth: 1,
         borderColor: "white",
-        borderRadius: 50,
-        marginBottom: 10,        
+        borderTopLeftRadius: 10,
+        borderBottomLeftRadius: 10,
+        marginBottom: 10,
     },
     taskItemContent: {
         fontSize: 18,
         color: "white",
     },
+    deleteTaskItemButton: {
+        width: "10%",
+        height: 50,
+        backgroundColor: "white",
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderLeftWidth: 1,
+        borderLeftColor: "red",
+        borderTopRightRadius: 10,
+        borderBottomRightRadius: 10,
+    }
 })
 
 export default styles

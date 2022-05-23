@@ -1,6 +1,7 @@
 import { StyleSheet } from 'react-native'
 
-const containersWidth = 330
+const containersWidth = "80%"
+const containersHeight = 60
 
 const styles = StyleSheet.create({
     loginContainer: {
@@ -15,11 +16,12 @@ const styles = StyleSheet.create({
         color: "white",
         fontSize: 36,
         fontWeight: 'bold',
-        marginVertical: 60
+        marginVertical: 60,
+        textAlign: 'center'
     },
     inputsContainers: {
         width: containersWidth,
-        height: 60,
+        height: containersHeight,
         flexDirection: 'row',
         marginVertical: 30,
         backgroundColor: "#575655",
@@ -27,17 +29,23 @@ const styles = StyleSheet.create({
         paddingVertical: 10,
         borderRadius: 50,
         color: "white",
-        alignItems: 'center'
+        alignItems: 'center',
+
+    },
+    viewPassword: {
+        position: 'absolute',
+        right: 25
 
     },
     inputs: {
-        marginLeft: 15,
+        marginLeft: 18,
         width: "100%",
-        height: "100%"
+        height: "100%",
+        fontSize: 17
     },
     buttonContainer: {
-        width: containersWidth,
-        height: 60,
+        width: 330,
+        height: containersHeight,
         backgroundColor: "#fff",
         borderRadius: 50,
         alignItems: 'center',
@@ -45,9 +53,21 @@ const styles = StyleSheet.create({
         marginTop: 60
     },
     buttonText: {
-        fontSize: 20,
+        fontSize: 17,
         fontWeight: "800"
-    }
+    },
+    // googleButtonContainer:{
+    //     width: containersWidth,
+    //     height: 60,
+    //     backgroundColor: "#fff",
+    //     borderRadius: 50,
+    //     flexDirection: 'row-reverse',
+    //     alignItems: 'center',
+    //     paddingHorizontal: 60,
+    //     justifyContent: 'space-evenly',
+    //     marginTop: 10
+
+    // }
 })
 
 export default styles
